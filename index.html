@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudo de Verbos</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: sans-serif;
+      color: #000000;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .verb-portugues {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .resposta {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .resposta.mostrado {
+      background-color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estudo de Verbos</h1>
+
+  <div class="card">
+    <div class="verb-portugues">Comer</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Eat')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Beber</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Drink')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Jogar boliche</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Bowling')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Pescar</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Fishing')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Assistir</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Watching')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Ler</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Reading')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Ouvir</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Listening')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Assinar</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Signing')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Cozinhar</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Cooking')">Clique para ver o verbo</div>
+  </div>
+
+  <div class="card">
+    <div class="verb-portugues">Escovar</div>
+    <div class="resposta" onclick="mostrarVerbo(this, 'Brushing')">Clique para ver o verbo</div>
+  </div>
+
+  <script>
+    function mostrarVerbo(elemento, verbo) {
+      elemento.textContent = verbo;
+      elemento.classList.add('mostrado');
+    }
+  </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
